@@ -27,9 +27,9 @@ jobs:
         pip install pylint
         pip install pytest
         pip install -r requirements.txt
-    - name: Analysing the code with pylint
-      run: |
-        pylint `ls -R|grep .py$|xargs`
+#     - name: Analysing the code with pylint
+#       run: |
+#         pylint `ls -R|grep .py$|xargs`
     - name: Testing the code with pytest
       run: |
         pytest
