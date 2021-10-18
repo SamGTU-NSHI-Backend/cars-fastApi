@@ -15,3 +15,8 @@ $PORT - port for launching server
 `uvicorn app.main:app --reload --port $PORT`
 
 $PORT - port for launching server
+
+# OpenApi
+`localhost:$PORT/docs`
+
+$PORT - port for launching server
