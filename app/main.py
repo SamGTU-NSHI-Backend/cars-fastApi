@@ -4,6 +4,9 @@ from starlette.responses import FileResponse
 
 from .routers import car_controller
 
+from .store.load_data import load_data
+load_data()
+
 app = FastAPI()
 
 app.include_router(car_controller.router)
